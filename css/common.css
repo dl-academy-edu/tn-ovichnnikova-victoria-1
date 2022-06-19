@@ -1,0 +1,28 @@
+body   {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button_first {
+    background: #000000;
+    color: #fff;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.unddoted {
+    list-style-type: none;
+}
+
+footer {
+    background: #434343;
+
+
+}
