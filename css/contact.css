@@ -1,0 +1,61 @@
+
+.contact-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin: 0;
+}
+
+.crumbs {
+    display: flex;
+    align-items: center;
+}
+.crumbs a {
+    margin-right: 48px;
+}
+    
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 50px auto 60px;
+}
+
+
+
+
+
+.contact-form {
+    width: 680px;
+    background: #E5EAF8;
+    margin-right: 120px;
+    padding: 42px 40px;
+}
+
+.text-block {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.text-block p {
+max-width: 380px;
+margin-bottom: 20px;
+}
+
+.paragraph {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+}

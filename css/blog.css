@@ -1,0 +1,71 @@
+.blog-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.crumbs {
+    display: flex;
+    align-items: center;
+}
+.crumbs a {
+    margin-right: 48px;
+}
+
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.blog-list li {
+    max-width: 380px; 
+    line-height: 25px;
+    color: #1E0606;
+    margin-bottom: 14px;
+    
+}
+
+
+
+
+.date-blog {
+    color: #818181;
+    margin: 20px auto 7px;
+}
+
+
+
+.blog-list h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #1E0606;
+    margin: 0 auto 15px;
+
+}
+
+.date-blog {
+    color: #818181;
+}
+    
+ .blog-page {
+    display: flex;
+    justify-content: center;
+    margin-right: 67px;color: #1E0606;
+    margin: 0;
+ }   
+
+ 
+
+
+    
+    
