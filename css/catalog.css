@@ -43,6 +43,11 @@
     width: 50%;
 }
 
+.category-title:hover,
+.category-title:active {
+    text-decoration-line: underline;
+}
+
 .category-block:nth-child(3) {
     margin-right: 200px;
 }

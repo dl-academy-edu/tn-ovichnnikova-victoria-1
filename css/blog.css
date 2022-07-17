@@ -8,15 +8,6 @@
     color: #1E0606;
 }
 
-.crumbs {
-    display: flex;
-    align-items: center;
-}
-.crumbs a {
-    margin-right: 48px;
-}
-
-
 .blog-list {
     display: flex;
     flex-wrap: wrap;
@@ -32,8 +23,9 @@
     
 }
 
-
-
+.blog-list img {
+    background-color:#C7C1C1;
+}
 
 .date-blog {
     color: #818181;
@@ -50,7 +42,10 @@
     line-height: 31px;
     color: #1E0606;
     margin: 0 auto 15px;
+}
 
+.blog-list a:hover .headline {
+    text-decoration-line: underline;
 }
 
 .date-blog {

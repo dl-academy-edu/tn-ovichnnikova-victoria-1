@@ -3,7 +3,7 @@
 }
 
 body   {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -17,9 +17,7 @@ a {
     max-width: 100%;
 }
 
-
-
-.button_first {
+.button-first {
     background: #000000;
     color: #fff;
     display: flex;
@@ -30,13 +28,21 @@ a {
     align-items: center;
     padding: 9px 22px;
     cursor: pointer;
+    border: none;
 }
 
-.button_first:hover {
+.button-first:hover {
     background: #C29974;
+    border: none;
 }
 
+.button-first:active {
+    background: #CFAF91;
+}
 
+.button-first:disabled {
+    background: #C7C1C1;
+}
 .unddoted {
     list-style-type: none;
     padding: 0;
@@ -56,7 +62,7 @@ a {
 }
 
 .header-menu {
-margin: 0 auto 0 25px;
+    margin: 0 auto 0 64px;
 }
 
 .header-list {
@@ -65,18 +71,36 @@ margin: 0 auto 0 25px;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    
 }
+
 .header-menu a {
     color: #1E0606;
     margin-right: 20px;
 }
 
+.header a:hover,
+.search:hover {
+    opacity: 50%;
+}
+
+.header a:active, 
+.search:active {
+    opacity: 10%;
+}
+
+.search {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    margin-right: 17px;
+}
 .contact-us {
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
     color: #1E0606;
+    text-transform: uppercase;
+    margin-right: -10px;
 }
 
 /*BREADCRUMBS*/
@@ -88,20 +112,38 @@ margin: 0 auto 0 25px;
 
 .crumbs a {
     margin-right: 48px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
 }
 
 
-.home {
+.this-page {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+
+
+.breadcrumbs-link {
     position: relative;
 }
 
-.home::after {
+.breadcrumbs-link::after {
     position: absolute;
     content: '';
     width: 8px;
     height: 12px;
     background: url(../breadcrumbs.svg);
-    left: 65px;
+    right: -30px;
     top: 6px;
 }
 
@@ -114,13 +156,65 @@ margin: 0 auto 0 25px;
     margin: 53px auto 63px;
 }
 
+
+
 .page-list a {
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     color: #1E0606;
     margin-right: 67px;
+}
+
+.page-list a.page-1 {
+    color: #C29974;  
+}
+
+.page-list a:hover {
+    color: #AAAAAA;
+}
+.page-list a:active {
+    color: #C29974;
+}
+
+.hidden {
+    font-size: 0;
+    line-height: 0;
+}
+
+/*page-list*/
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-l,
+.arrow-r {
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+    border: 0;
+    background-repeat: no-repeat; 
+    background-color: transparent;
+   
+}
+
+.arrow-l {
+    background-image: url('../images/arrowL.svg');
+}
+
+.arrow-r {
+    background-image: url('../images/arrowR.svg');
+}
+
+.arrow-r:hover,
+.arrow-r:active {
+    background-image: url('../images/arrowRhover.svg');
 }
   
 /*footer*/
@@ -143,8 +237,7 @@ margin: 0 auto 0 25px;
 }
 
 .footer-list li {
-    margin-bottom: 15px;
-    
+    margin-bottom: 15px;  
 }
 
 .footer-list a {
@@ -161,10 +254,13 @@ margin: 0 auto 0 25px;
     width: 380px;
     margin-top: 100px;
     margin-bottom: 13px;
-    
-
 }
-    
+
+.footer-list a:hover,
+.connect a:hover {
+    opacity: 0.5;
+}
+  
 .footer-title {
     margin: 0;
     font-family: 'Open Sans';
@@ -217,9 +313,20 @@ margin: 0 auto 0 25px;
     display: flex;
     align-items: center;
     padding: 0;
-    margin-top: 10px;
-    
+    margin-top: 10px;  
 }
+
+.footer-info a:hover,
+.footer-info a:active {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer-info p:hover,
+.footer-info p:active {
+    color: #C29974;
+}
+
 
 .rating {
     display: flex;
@@ -237,26 +344,19 @@ margin: 0 auto 0 25px;
     margin: 3px;
 }
 
+.rating-star button:hover {
+    color: #C29974;
+}
+
+
 .footer-form {
     width: 380px;
     height: 40px;
     background: #666666;
 }
 
-/* EMAIL */
 
-.footer-form {
-    display: flex;
-    margin: 25px 0;
-}
 
-.email {
-    width: 299px;
-    height: 40px;
-    background: #666666;
-    border: none;
-    
-}
  /*INPUT*/
  
  label {
@@ -268,13 +368,28 @@ margin: 0 auto 0 25px;
 
  input,
  textarea {
-    border: 1px solid #cccc;
+    border: 1px solid #C7C1C1;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: #1E0606;
     padding: 14px 20px;
     resize: none;
+    outline: none;
+ }
+
+ input:hover,
+ input:active,
+ textarea:hover,
+ textarea:active {
+    background: #FFFFFF;
+    border: 1px solid #C29974;
+ }
+
+ input:disabled,
+ textarea:disabled {
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
  }
 
  textarea {
@@ -298,4 +413,118 @@ margin: 0 auto 0 25px;
  .clicking {
     margin: 22px auto 17px;
  }
+
+/* EMAIL */
+
+.footer-form {
+    display: flex;
+    margin: 25px 0;
+}
+
+.email {
+    width: 299px;
+    height: 40px;
+    background: #666666;
+    border: 1px solid #666666; 
+    color: #EBEBEB;
+}
+
+.email:hover,
+.email:active {
+    border: 1px solid #FFFDFD;
+    background: #666666;
+    
+}
+
+/* checkbox radio*/
+
+.checkbox-input,
+.radio-input,
+.radio-amoun {
+    display: none;
+}
+
+.checkbox-label,
+.radio-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+
+}
+
+.checkbox-label:before,
+.checkbox-label:after,
+.radio-label:before,
+.radio-label:after {
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+.checkbox-label:before {
+    width: 19px;
+    height: 19px;
+    background: transparent;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+}
+
+.checkbox-label:after {
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/check.svg');
+    background-repeat: no-repeat;
+    left: 5px;
+    top: 3px;
+    opacity: 0;
+}
+
+.radio-label:before {
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+}
+.radio-label:after {
+    width: 16px;
+    height: 16px;
+    background: #C29974;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.checkbox-list label:hover,
+.checkbox-list label:active {
+    text-decoration-line: underline;
+}
+
+.radio-list label:hover,
+.radio-list label:active {
+    text-decoration-line: underline; 
+}
+
+.radio-list label:disabled,
+.checkbox-list label:disabled {
+    color: #908484;
+
+}
+.checkbox-input:checked + .checkbox-label:after,
+.radio-input:checked + .radio-label:after {
+    opacity: 1;
+}
+ 
+.checkbox-list li,
+.radio-list li {
+    margin-bottom: 18px;
+}
+
+
 
