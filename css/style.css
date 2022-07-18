@@ -18,7 +18,7 @@
 }
 
 .banner-item {
-    padding: 89px 0 0 0;
+    padding: 56px 0 0 0;
 
 }
 
@@ -29,7 +29,9 @@
 
 
 .banner-01 li {
-    margin-bottom: -8px;
+    margin-bottom: 8px;
+    width: 31px;
+    height: 3px;
 }
 
 .page {
@@ -46,11 +48,27 @@
     flex-direction: column;
 }
 
-.button-secondary {
+
+.button-secondary,
+.button-secondary-one {
     border: none;
+    width: 31px;
+    height: 3px;
     margin: 0;
     padding: 0;
-    background: #EEE4DB;
+
+}
+
+.button-secondary {
+    background: #D6CAC2;
+}
+
+.button-secondary-one {
+    background: #725F5B;
+}
+
+.button-secondary:hover {
+    background: #725F5B;
 }
 
 .banner-title {
@@ -100,8 +118,6 @@
     color: #1E0606;
     margin-bottom: 30px;
     text-transform: uppercase;
-
-
 }
 
 
@@ -110,9 +126,7 @@
 
 .category-container {
     display: block;
-    margin-bottom: 90px;
-    
-  
+    margin-bottom: 90px; 
 }
 
 .services-list {
@@ -144,6 +158,12 @@
     width: 50%;
 }
 
+.category-title:hover,
+.category-title:active {
+    text-decoration-line: underline;
+}
+
+
 .img1 {
     background-image: url('../images/category1.jpg');
     background-color: #DBE4DB;
@@ -161,6 +181,7 @@
 
 .img4 {
     background-image: url('../images/category4.jpg');
+    background-color: #EADDD3;
 }
 
 
@@ -302,19 +323,13 @@
 .map {
     width: 483px;
     height: 196px;
-    margin-bottom: -150px;
-    
+    margin-bottom: -150px;  
 }
 
+/* POPUP */
 
-
-
-
-/* POPAP */
-
-.popap {
+.popup {
     position: fixed;
-    
     top: 0;
     left: 0;
     background: rgba(125, 151, 218, 0.8);
@@ -324,26 +339,38 @@
     display: none;
     justify-content: center;
     align-items: center;
-   
 }
 
-.popap-open {
+.popup-open {
     display: flex;
-    
 }
 
-.popap-form {
+.popup-close {
+    position: absolute;
+    border: none;
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    cursor: pointer; 
+    top: 0px;
+    right: -20px;
+    transform: rotate(90deg);
+    color:#F0F0F0;
+}
+
+.popup-close:hover {
+    opacity: 70%;
+}
+
+.popup-close:active {
+    opacity: 40%;
+}
+
+.popup-form {
     width: 680px;
     background: #E5EAF8;
     padding: 42px 40px;
     position: relative;   
 }
 
-.popap-close {
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;  
-}
+
