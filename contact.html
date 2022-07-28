@@ -37,13 +37,14 @@
      <a href="contact.html" class="contact-us">Contact Us</a>    
     </header>
     <main class="container">
-        <h1 class="contact-title">Contact  Us</h1>
-        <div class="crumbs">
-            <a href="index.html" class="breadcrumbs-link">Home</a>
-            <p class="this-page">Contact us</p>
-        </div>
-        <section class="contact-section">
-            <article class="contact-block">
+        <section>
+            <h1 class="contact-title">Contact  Us</h1>
+            <div class="crumbs">
+                <a href="index.html" class="breadcrumbs-link">Home</a>
+                <p class="this-page">Contact us</p>
+            </div>
+            <!-- <section class="contact-section"> -->
+            <div class="contact-block">
                 <form action="#" class="contact-form">
                         <div class="label-wrapper">
                             <label for="input-name" >Name</label>
@@ -60,8 +61,8 @@
                             </div>
                         </div>
                         <div class="label-wrapper">
-                            <label for="">Message</label>
-                            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                            <label for="textarea">Message</label>
+                            <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
                         </div>
                         <div class="clicking">
                             <input type="checkbox" id="input" class="checkbox-input" checked>
@@ -69,17 +70,16 @@
                         </div>
                     <button type="submit" class="button button-first">Submit</button> 
                 </form>
-            </article>
-
-            <article class="text-block">
-                <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-                <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                <p class="paragraph">An expert is waiting to help you!</p>
-            </article>            
+                <div class="text-block">
+                    <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    <p class="paragraph">An expert is waiting to help you!</p>
+                </div>
+            </div>            
         </section>
     </main>
-<footer class="footer">
-        <section  class="container footer-block">
+    <footer class="footer">
+        <div class="container footer-block">
             <div class="footer-list">
                 <p class="footer-title">Navigation</p>
                 <ul class="unddoted footer-text">
@@ -208,10 +208,9 @@
                     </li>
                 </ul>      
             </div>
-             
-        </section>
+        </div>
     
     
-</footer>
+    </footer>
 </body>
 </html>

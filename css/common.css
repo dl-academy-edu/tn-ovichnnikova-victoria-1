@@ -107,27 +107,25 @@ a {
 .crumbs {
     display: flex;
     align-items: center;
- 
+    margin-bottom: 50px;
+}
+
+.crumbs a, 
+.this-page {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    margin: 0;
 }
 
 .crumbs a {
     margin-right: 48px;
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #1E0606;
+    
 }
 
-
-.this-page {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: #1E0606;
+.this-page { 
     opacity: 0.5;
 }
 
