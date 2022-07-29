@@ -293,6 +293,7 @@
 .about-us {
     background:  #E1F0F7;
     padding: 0 30px 30px;
+    max-width: 543px;
 }
 
 .about-us:first-child {

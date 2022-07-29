@@ -499,29 +499,33 @@ a {
     opacity: 0;
 }
 
-.checkbox-list label:hover,
-.checkbox-list label:active {
-    text-decoration-line: underline;
-}
 
-.radio-list label:hover,
-.radio-list label:active {
-    text-decoration-line: underline; 
-}
-
-.radio-list label:disabled,
-.checkbox-list label:disabled {
-    color: #908484;
-
-}
 .checkbox-input:checked + .checkbox-label:after,
 .radio-input:checked + .radio-label:after {
     opacity: 1;
 }
- 
+
 .checkbox-list li,
 .radio-list li {
     margin-bottom: 18px;
+}
+
+.checkbox-input:hover + .checkbox-label,
+.radio-input:hover + .radio-label,
+.checkbox-input:hover + .checkbox-label::before,
+.radio-input:hover + .radio-label::before {
+  text-decoration-line: underline;
+  color: #1E0606;
+}
+
+.checkbox-input:disabled + .checkbox-label,
+.radio-input:disabled + .radio-label,
+.radio-amoun:disabled + .amount-label,
+.checkbox-input:disabled + .checkbox-label::before,
+.radio-input:disabled + .radio-label::before,
+.radio-amoun:disabled + .amount-label:before {
+  text-decoration-line: none;
+  opacity: .5;
 }
 
 
